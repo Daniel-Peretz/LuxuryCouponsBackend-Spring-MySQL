@@ -61,7 +61,7 @@ public class mockDataCustomer implements CommandLineRunner {
             guestServiceImpl.register(customer3);
             printRow();
 
-            customerServiceImpl = (CustomerServiceImpl) loginManager.login("noam@gmail.com", "noam999", ClientType.CUSTOMER);
+            customerServiceImpl = (CustomerServiceImpl) loginManager.login("daniel@gmail.com", "daniel1234", ClientType.CUSTOMER);
             printRow();
 
             Coupon coupon20 = Coupon.builder().companyId(7).amount(500).price(200).category(Category.RESTAURANT).title("Wine tasting").description("Price for one wine tasting includes cheese palette").image(ImageByUrl("https://github.com/DadonStyle/LuxuryCouponsAssets/blob/main/WINE%20TASTING2.jpeg?raw=true")).startDate(Date.valueOf("2021-07-8")).endDate(Date.valueOf("2022-07-06")).build();
